@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700');
+ * {
+	 box-sizing: border-box;
+}
+ body {
+	 font-family: 'Roboto', sans-serif;
+	 background: green;
+}
+ #dashboard {
+	 margin-left: 20px;
+	 padding: 5px;
+}
+ #dashboard .heading h1 {
+	 color: orange;
+	 font-size: 1.4rem;
+	 font-weight: 400;
+	 margin-bottom: 10px;
+}
+ #dashboard .heading p {
+	 color: greenyellow;
+	 font-size: 0.8rem;
+	 margin-bottom: 10px;
+}
+ #dashboard .cards {
+	 overflow: auto;
+	 margin-bottom: 30px;
+}
+ #dashboard .cards .card {
+	 background: olive;
+	 border-radius: 5px;
+	 padding: 10px;
+	 overflow: auto;
+}
+ #dashboard .cards .card .user-img .src {
+	 background: whitesmoke;
+     background-repeat: no-repeat;
+	 width: 25px;
+	 height: 25px;
+	 border-radius: 50%;
+	 margin: 0 250px;
+	 padding: 5px;
+	 position: relative;
+ }
+
+ #dashboard .cards .card .user-name {
+	 font-size: 1rem;
+	 color: aqua;
+	 display: block;
+	 text-align: center;
+	 margin: 10px 0;
+}
+ #dashboard .cards .card h6 {
+	 font-size: 1rem;
+	 text-align: center;
+}
+ #dashboard .cards .card .date {
+	 font-size: 0.9rem;
+	 display: block;
+	 border-left: 5px solid aqua;
+	 position: relative;
+	 left: -10px;
+	 padding: 15px 15px;
+	 margin: -10px 0;
+     float: left;
+	 color: whitesmoke;
+}
+ #dashboard .cards .card .icon {
+	 background: orange;
+	 width: 25px;
+	 height: 25px;
+	 border-radius: 50%;
+	 font-size: 0.7rem;
+	 color: black;
+	 padding: 5px;
+	 display: inline-block;
+	 text-align: center;
+	 vertical-align: middle;
+}
+ #dashboard .cards .card .ques {
+	 font-size: 0.8rem;
+	 font-weight: 300;
+	 color: white;
+     display: inline-block;
+}
+ #dashboard .col-md-4 {
+	 padding: 0 25px;
+     display: inline-block;
+}
+#dashboard .col-md-2 {
+	padding: 0 10px;
+	display: inline-block;
+}
+ 
+#dashboard table {
+	width: 75%;
+
+}
+
+#dashboard th {
+	border: 1px solid;
+	color: aquamarine;
+}
+ 
+#dashboard td {
+	padding: 10px 20px;
+	color: antiquewhite;
+}
