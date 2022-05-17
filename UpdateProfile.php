@@ -63,7 +63,7 @@ if (isset($_POST["submit"])) {
         <form action="" method="post" enctype="multipart/form-data">
             <?php
 
-            $sql = "SELECT * FROM users WHERE id='{$_SESSION["userID"]}'";
+            $sql = "SELECT * FROM usertb1 WHERE id='{$_SESSION["userID"]}'";
             $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
