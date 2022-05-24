@@ -1,57 +1,57 @@
 <?php
  namespace App\Http\Controllers;
  use Illuminate\Http\Request;
- use App\Models\Student;
+ use App\Models\User;
  
-class StudentController extends Controller
+class UserController extends Controller
 {
     public function index()
     {
-        $students = Student::all();
-        return view ('students.index')->with('students', $students);
+        $users = User::all();
+        return view ('users.index')->with('users', $users);
     }
  
     
     public function create()
     {
-        return view('students.create');
+        return view('users.create');
     }
  
    
     public function store(Request $request)
     {
         $input = $request->all();
-        Student::create($input);
-        return redirect('student')->with('flash_message', 'Student Addedd!');  
+        User::create($input);
+        return redirect('User')->with('Success', 'User Added!');  
     }
  
     
     public function show($id)
     {
-        $student = Student::find($id);
-        return view('students.show')->with('students', $student);
+        $User = User::find($id);
+        return view('users.show')->with('users', $User);
     }
  
     
     public function edit($id)
     {
-        $student = Student::find($id);
-        return view('students.edit')->with('students', $student);
+        $User = User::find($id);
+        return view('users.edit')->with('users', $User);
     }
  
   
     public function update(Request $request, $id)
     {
-        $student = Student::find($id);
+        $User = User::find($id);
         $input = $request->all();
-        $student->update($input);
-        return redirect('student')->with('flash_message', 'student Updated!');  
+        $User->update($input);
+        return redirect('ProfilePage.php')->with('Success', 'User Updated!');  
     }
  
    
     public function destroy($id)
     {
-        Student::destroy($id);
-        return redirect('student')->with('flash_message', 'Student deleted!');  
+        User::destroy($id);
+        return redirect('Welcome.php')->with('Success', 'User deleted!');  
     }
 }
