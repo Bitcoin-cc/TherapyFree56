@@ -47,7 +47,7 @@ if (isset($_POST["submit"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="UpdateProfile.css">
     <link rel="stylesheet" href="mystyle.css">
-    <title>Profile Page - Pure Coding</title>
+    <title>Update Profile</title>
 </head>
 
 <body class="profile-page">
