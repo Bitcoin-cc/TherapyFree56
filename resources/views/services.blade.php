@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="mystyle.css">
 </head>
+<<<<<<< HEAD
 <style>
 
 .topnav {
@@ -202,3 +203,11 @@ design two button that would redierct the user to the services (questioannire an
 
 -->
 
+=======
+<body>
+
+  <h2 class="wide">services page</h2>
+ display our services (connect with a doctor , take a questionnaire to display your mental status)
+</body>
+</html>
+>>>>>>> 68c1b536006d0ad0d30f6027c70b46833fe8e80a
