@@ -22,7 +22,7 @@ if (isset($_POST["submit"])) {
         if ($photo_size > 5242880) {
             echo "<script>alert('Photo is very big. Maximum photo uploading size is 5MB.');</script>";
         } else {
-            $sql = "UPDATE users SET full_name='$full_name', password='$password', photo='$photo_new_name' WHERE id='{$_SESSION["userID"]}'";
+            $sql = "UPDATE usertb1 SET full_name='$full_name', password='$password', photo='$photo_new_name' WHERE id='{$_SESSION["userID"]}'";
             $result = mysqli_query($conn, $sql);
             if ($result) {
                 echo "<script>alert('Profile Updated successfully.');</script>";
