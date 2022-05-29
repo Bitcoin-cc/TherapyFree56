@@ -69,11 +69,7 @@ float: left;
 </head>
 <body>
 <div class="topnav">
-<<<<<<< HEAD
 	<a class="title" href="laravelAD/public/" taret="_self">Bit Therapy </a>
-=======
-	<a class="title" href="laravelAD/public/" taret="_self">The Therapy Webbo</a>
->>>>>>> 68c1b536006d0ad0d30f6027c70b46833fe8e80a
     <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -90,23 +86,15 @@ float: left;
             @endif
             </div>
             <a href="articles" taret="_self">Articles</a>
-<<<<<<< HEAD
             <a href="Questionnaire" taret="_self">Questionnaire</a>
-=======
->>>>>>> 68c1b536006d0ad0d30f6027c70b46833fe8e80a
 
 </div>
 <h2 class="wide">Therapy main page</h2>
 display stuff that are beautiful and related to our website (mental health issues)
 <div class="footer">
-<<<<<<< HEAD
 <a href="Service&Policy" target="_self">Service & Policy</a>
 <a href="aboutus" target="_self">About Us</a>
 <a href="faqs" target="_self">FAQ </a>
-=======
-<a href="services" target="_self">Services</a>
-<a href="aboutus" target="_self">About Us</a>
->>>>>>> 68c1b536006d0ad0d30f6027c70b46833fe8e80a
 </div>
 </body>
 </html>

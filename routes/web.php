@@ -41,7 +41,6 @@ Route::get('/articles', function () {
     return view('articles');
 });
 
-<<<<<<< HEAD
 Route::get('/connectWdoc', function () {
     return view('connectWdoc');
 });
@@ -149,8 +148,3 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
-=======
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
->>>>>>> 68c1b536006d0ad0d30f6027c70b46833fe8e80a

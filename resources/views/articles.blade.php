@@ -59,7 +59,6 @@ p {
 
 }
 
-<<<<<<< HEAD
 .aw:link {
   color: white;
   text-decoration: none;
@@ -93,9 +92,6 @@ a:active {
   color: grey;
   text-decoration: none;
 }
-=======
-
->>>>>>> 68c1b536006d0ad0d30f6027c70b46833fe8e80a
 
 .bg1 {
   background: url('/laravelad/resources/views/images/signs-of-anxiety-disorder-2.jpg');
@@ -167,7 +163,6 @@ a:active {
 
 <div class="container">
       <div class="bg1">
-<<<<<<< HEAD
       <p>      <a class = "aw" href="articles/article1" taret="_self">Anxiety</a></p>
       </div>
 
@@ -204,43 +199,6 @@ a:active {
       <div class="bg12">
       <p>      <a class = "aw" href="articles/article12" taret="_self">Schizophernia</a></p>
 
-=======
-        <p>Anxiety</p>
-      </div>
-
-      <div class="bg2">
-        <p>Anger</p>
-      </div>
-      <div class="bg3">
-        <p>Borderline Personality Disorder</p>
-      </div>
-      <div class="bg4">
-        <p>Depression</p>
-      </div>
-      <div class="bg5">
-        <p>Eating Disorder</p>
-      </div>
-      <div class="bg6">
-        <p>Grief</p>
-      </div>
-      <div class="bg7">
-        <p>Stress</p>
-      </div>
-      <div class="bg8">
-        <p>Self-Esteem</p>
-      </div>
-      <div class="bg9">
-        <p>Relationship</p>
-      </div>
-      <div class="bg10">
-        <p>Mental Health</p>
-      </div>
-      <div class="bg11">
-        <p>Autism</p>
-      </div>
-      <div class="bg12">
-        <p>Schizophernia</p>
->>>>>>> 68c1b536006d0ad0d30f6027c70b46833fe8e80a
       </div>
     </div>
 
