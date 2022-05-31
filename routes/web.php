@@ -134,6 +134,9 @@ Route::get('/faqs', function () {
     return view('faqs');
 });
 
+Route::get('/auth/adminRegister', function () {
+    return view('/auth/adminRegister');
+});
 
 
 //Route::resource(‘/contact’, ContactController::class);
