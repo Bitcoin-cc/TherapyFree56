@@ -1,10 +1,8 @@
 <?php
-
 namespace App\Http\Controllers;
-use app\Models\Patient;
+use App\Models\Patient;
 use Illuminate\Http\Request;
-
-class PatientControler extends Controller
+class PatientController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +11,10 @@ class PatientControler extends Controller
      */
     public function index()
     {
-        //
         $patients = Patient::all();
-        return view ('patients.index')->with('patients', $patients);
+        return view ('patients.index')->with('patients',$patients);
+   
+   
     }
 
     /**
@@ -37,11 +36,14 @@ class PatientControler extends Controller
      */
     public function store(Request $request)
     {
-        //
+       // return view('patients.create');
+
+
         $input = $request->all();
-        Patient::create($input);
-        return redirect('patients')->with('flash_message', 'patient Addedd!');
-    }
+         Patient::create($input);
+         return redirect('patients')->with('flash_message', 'patient Addedd!');
+    
+ }
 
     /**
      * Display the specified resource.
@@ -53,7 +55,7 @@ class PatientControler extends Controller
     {
         //
         $patient = Patient::find($id);
-        return view('patients.show')->with('patients', $patient);
+        return view('patients.show')->with('patient', $patient);
     }
 
     /**
@@ -64,9 +66,11 @@ class PatientControler extends Controller
      */
     public function edit($id)
     {
-        //
-        $patient = Patient::find($id);
-        return view('patients.edit')->with('patients', $patient);
+        
+         $patient = Patient::find($id);
+         return view('patients.edit')->with('patient', $patient);
+
+        
 
     }
 
@@ -77,14 +81,26 @@ class PatientControler extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request,Patient $patient)
+    // {
+    //     //
+    //     $patient = Patient::find($id);
+    //     $input = $request->all();
+    //     $patient->update($input);
+    //     return redirect('patient')->with('flash_message', 'Patient Updated!');
+ 
+ 
+    // }
     {
-        //
-        $patient = Patient::find($id);
-        $input = $request->all();
-        $patient->update($input);
-        return redirect('patient')->with('flash_message', 'Patient Updated!');
+        $request->validate([
+            'name' => 'required',
+            'Description' => 'required',
+        ]);
+        $patient->update($request->all());
+        return redirect()->route('patients.index')
+                        ->with('success','patient updated successfully');
     }
+  
 
     /**
      * Remove the specified resource from storage.
@@ -94,8 +110,8 @@ class PatientControler extends Controller
      */
     public function destroy($id)
     {
-        //
-        Patient::destroy($id);
-        return redirect('patient')->with('flash_message', 'Patient Deleted!');
+        $patient = Patient::find($id);
+        $patient->delete();
+        return redirect('patients')->with('flash_message', 'Patient Deleted!');
     }
 }

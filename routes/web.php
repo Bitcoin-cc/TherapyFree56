@@ -1,6 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\PatientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -93,42 +95,16 @@ Route::get('/articles/article12', function () {
     return view('articles/article12');
 });
 
-Route::get('/patient/admincreate', function () {
-    return view('patient/admincreate');
-});
 
-Route::get('/patient/adminedit', function () {
-    return view('patient/adminedit');
-});
-
-Route::get('/patient/admindoc', function () {
-    return view('patient/admindoc');
-});
-
-Route::get('/patient/adminmain', function () {
-    return view('patient/adminmain');
+Route::get('/patients./index', function () {
+    return view('patients/index');
 });
 
 
-Route::get('/students/edit', function () {
-    return view('students/edit');
-});
+Route::get('delete-records','PatientController@index');
+Route::get('delete/{id}','PatientController@destroy');
 
-Route::get('/students/index', function () {
-    return view('students/index');
-});
 
-Route::get('/students/layout', function () {
-    return view('students/layout');
-});
-
-Route::get('/students/show', function () {
-    return view('students/show');
-});
-
-Route::get('/students/create', function () {
-    return view('students/create');
-});
 
 Route::get('/faqs', function () {
     return view('faqs');
@@ -138,11 +114,13 @@ Route::get('/auth/adminRegister', function () {
     return view('/auth/adminRegister');
 });
 
-
+//Route::resource('pati', [App\Http\Controllers\PatientController]);
+//use App\Http\Controllers\PatientController;
+//Route::resource('/pati', PatientController::class);
 //Route::resource(‘/contact’, ContactController::class);
 
 
-
+Route::resource('patients','PatientController');
 
 Auth::routes();
 

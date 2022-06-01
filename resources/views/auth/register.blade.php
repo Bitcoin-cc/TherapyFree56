@@ -61,11 +61,7 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-<<<<<<< Updated upstream
-                            <label for="admin" class="col-md-4 col-form-label text-md-end">{{ __('Are you an Admin? ') }}</label>
-=======
-                            <label for="admin" class="col-md-4 col-form-label text-md-end">{{ __('Choose 1 If You Want To Register As An Admin ') }}</label>
->>>>>>> Stashed changes
+                            <label for="admin" class="col-md-4 col-form-label text-md-end">{{ __('Put 1 If you are an Admin 0 If You Are a Patient') }}</label>
 
                             <div class="col-md-6">
                                 <input id="is_admin" type="number" class="form-control" name="is_admin" value="{{ old('is_admin') }}" required autocomplete="is_admin">
