@@ -105,9 +105,11 @@ Route::get('delete-records','PatientController@index');
 Route::get('delete/{id}','PatientController@destroy');
 
 
+Route::get('connectWdoc/{id}','PatientController@show');
 
-Route::get('/faqs', function () {
-    return view('faqs');
+
+Route::get('/faq', function () {
+    return view('faq');
 });
 
 Route::get('/auth/adminRegister', function () {

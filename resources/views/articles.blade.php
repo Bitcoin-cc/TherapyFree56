@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -158,10 +162,9 @@ a:active {
 }
 
 </style>
-
 <body>
 
-<div class="container">
+  <div class="container">
       <div class="bg1">
       <p>      <a class = "aw" href="articles/article1" taret="_self">Anxiety</a></p>
       </div>
@@ -201,7 +204,10 @@ a:active {
 
       </div>
     </div>
-
+    </div>
+     
 
 </body>
+@endsection
 </html>
+

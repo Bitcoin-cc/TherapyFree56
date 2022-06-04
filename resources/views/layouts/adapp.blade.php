@@ -54,18 +54,11 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
+                                   Dr. {{ Auth::user()->name }}
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="articles" taret="_self">Articles</a>
-                            <a class="dropdown-item" href="Service&Policy" taret="_self">Services Policy</a>
-                            <a class="dropdown-item" href="Questionnaire" taret="_self">Questionnaire</a>
-                            <a class="dropdown-item" href="services" taret="_self">Services</a>
-                            <a class="dropdown-item" href="faq" taret="_self">FAQs</a>
-                            <a class="dropdown-item" href="dashboard" taret="_self">Dashboard</a>
-                            <a class="dropdown-item" href="aboutus" taret="_self">About Us</a>
-                            <a class="dropdown-item" href="connectWdoc" taret="_self">Connect With a Doctor</a>
+                                <a class="dropdown-item" href="/patients">Connect With a Patient</a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

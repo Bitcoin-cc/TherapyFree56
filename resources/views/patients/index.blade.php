@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adapp')
 @section('content')
 <h1>Patients</h1>
 Create A new  

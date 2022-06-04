@@ -1,74 +1,59 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" href="mystyle.css">
-</head>
-
-<!--you need to use the assets method to organize css styling-->
-<style>
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-.topnav a.title {
-	font-size: 30px;
-}
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-.footer {
-  background-color: #333;
-  overflow: hidden;
-}
-.footer a {
-float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.footer a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.footer a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-.footer {
-  background-color: #333;
-  overflow: hidden;
-}
-</style>
-<body>
-
-<div class="topnav">
-	<a class="title" href="laravelAD/public/" taret="_self">The Therapy Webbo</a>
+@extends('layouts.app')
+@section('content')
+<h1>Add Patients</h1>
+<div class="row">
+    <div class="col-lg-12 margin-tb">
+        <div class="pull-left">
             
-            <a href="articles" taret="_self">Articles</a>
-
+        </div>
+        <div class="pull-right">
+            <a class="btn btn-primary" href="home" taret="_self">Back </a>
+        </div>
+    </div>
 </div>
-<h>
-<>here you need to make a function for connecting with a Doctor
- <h/>
-</body>
-</html>
+   
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+   
+<form action="{{ route('patients.store') }}" method="POST">
+    @csrf
+  
+     <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Name:</strong>
+                <input type="text" name="name" class="form-control" placeholder="name">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Description:</strong>
+                <textarea class="form-control" style="height:150px" name="Description" placeholder="Description"></textarea>
+            </div>
+        </div>
+
+    <script type="text/javascript">
+        function show_alert() {
+            alert("Issue Sent To the Doctor Check Your Home Page For more Info");
+        }
+    </script>
+        <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+              
+                <button class="btn btn-primary" href="home"  type="submit" onclick="show_alert()" value="Show alert box">Submit </button>
+        </div>
+
+      
+        
+   
+
+
+</form>
+@endsection

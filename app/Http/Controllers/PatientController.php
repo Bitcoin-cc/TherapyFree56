@@ -41,7 +41,7 @@ class PatientController extends Controller
 
         $input = $request->all();
          Patient::create($input);
-         return redirect('patients')->with('flash_message', 'patient Addedd!');
+          return redirect('patients')->with('flash_message', 'patient Addedd!');
     
  }
 

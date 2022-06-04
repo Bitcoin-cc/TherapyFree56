@@ -1,3 +1,8 @@
+@extends('layouts.app')
+
+@section('content')
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -21,3 +26,5 @@
    <input type="submit">
 </body>
 </html>
+
+@endsection

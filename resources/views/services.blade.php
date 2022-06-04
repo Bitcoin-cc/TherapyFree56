@@ -1,4 +1,6 @@
+@extends('layouts.app')
 
+@section('content')
 <!DOCTYPE html>
 <html>
 <head>
@@ -202,4 +204,5 @@ design two button that would redierct the user to the services (questioannire an
 
 
 -->
+@endsection
 
