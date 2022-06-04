@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adapp')
 
 @section('content')
 <div class="container">
@@ -15,7 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
-                   click here to go to your <a href="dashboard" target="_self">Dashboard</a>
+                   Welcome to the Dr. {{ Auth::user()->name }} 
                 </div>
             </div>
         </div>

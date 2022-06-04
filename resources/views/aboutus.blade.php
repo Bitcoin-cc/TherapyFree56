@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <!DOCTYPE HTML>
 <style>
 
@@ -155,3 +159,6 @@ html {
     </div>
   </div>
 </div>
+
+
+@endsection
