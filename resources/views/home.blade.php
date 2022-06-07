@@ -1,4 +1,4 @@
-@extends('layouts.app')
+ @extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -13,7 +13,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-              
+                    <a href="request/" taret="_self">Show Doctor Comments  </a>
+            
                     {{ __('You are logged in!') }}
                    click here If you have Admin Access <a href="/admin/home" target="_self">Admin Panel</a>
                    <a href="articles" taret="_self">Articles</a>
@@ -24,13 +25,14 @@
                    <a href="dashboard" taret="_self">dashboard</a>
                    <a href="aboutus" taret="_self">About Us</a>
                    <a href="connectWdoc" taret="_self">Connect With a Doctor</a>
+            
                 </div>
+               
             </div>
         </div>
     </div>
 </div>
 @endsection
-
 
 
 

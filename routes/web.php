@@ -96,16 +96,26 @@ Route::get('/articles/article12', function () {
 });
 
 
-Route::get('/patients./index', function () {
+Route::get('/patients/index', function () {
     return view('patients/index');
 });
 
+
+
+// Route::get('/request/index', function () {
+//     return view('/request/index');
+// });
 
 Route::get('delete-records','PatientController@index');
 Route::get('delete/{id}','PatientController@destroy');
 
 
-Route::get('connectWdoc/{id}','PatientController@show');
+
+Route::get('request','PatientUController@index');
+Route::get('request','PatientUController@index');
+ 
+
+
 
 
 Route::get('/faq', function () {
@@ -121,8 +131,16 @@ Route::get('/auth/adminRegister', function () {
 //Route::resource('/pati', PatientController::class);
 //Route::resource(‘/contact’, ContactController::class);
 
+// Route::get('/userAuth/index', function () {
+//     return view('/userAuth/index');
+// });
 
-Route::resource('patients','PatientController');
+// Route::resource('userAuth','PatientController');
+
+ Route::resource('patients','PatientController');
+
+// Route::resource('patients','PatientUController');
+
 
 Auth::routes();
 
