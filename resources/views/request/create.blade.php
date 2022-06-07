@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app');
 @section('content')
 <h1>Add Patients</h1>
 <div class="row">
@@ -7,7 +7,7 @@
             
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="home" taret="_self">Back </a>
+            <a class="btn btn-primary" href="{{ route('patients.index') }}"> Back</a>
         </div>
     </div>
 </div>
@@ -39,21 +39,11 @@
                 <textarea class="form-control" style="height:150px" name="Description" placeholder="Description"></textarea>
             </div>
         </div>
-
-    <script type="text/javascript">
-        function show_alert() {
-            alert("Issue Sent To the Doctor Check Your Home Page For more Info");
-        }
-    </script>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-              
-                <button class="btn btn-primary" href="home"  type="submit" onclick="show_alert()" value="Show alert box"> Submit </button>
+                <button type="submit" class="btn btn-primary" href="{{ route('patients.index') }}" >Submit</button>
+                
         </div>
-
-      
-        
+    </div>
    
-
-
 </form>
 @endsection

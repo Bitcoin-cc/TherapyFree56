@@ -2,7 +2,7 @@
 namespace App\Http\Controllers;
 use App\Models\Patient;
 use Illuminate\Http\Request;
-class PatientController extends Controller
+class PatientUController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -12,7 +12,7 @@ class PatientController extends Controller
     public function index()
     {
         $patients = Patient::all();
-        return view ('patients.index')->with('patients',$patients);
+        return view ('request.index')->with('patients',$patients);
     
    
    
@@ -56,7 +56,7 @@ class PatientController extends Controller
     {
         //
         $patient = Patient::find($id);
-        return view('patients.show')->with('patient', $patient);
+        return view('patient.show')->with('patient', $patient);
 
     }
 
@@ -70,7 +70,7 @@ class PatientController extends Controller
     {
         
          $patient = Patient::find($id);
-         return view('patients.edit')->with('patient', $patient);
+         return view('patient.edit')->with('patient', $patient);
 
         
 
