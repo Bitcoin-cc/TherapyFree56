@@ -6,7 +6,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-            add something
+            
     <title>{{ config('TherapyWebbo', 'TherapyWebbo') }}</title>
 
     <!-- Scripts -->
@@ -87,5 +87,10 @@
             @yield('content')
         </main>
     </div>
+
+       
+    
+    
+
 </body>
 </html>
