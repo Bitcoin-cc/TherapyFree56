@@ -153,12 +153,6 @@ float: left;
 
 </style>
 <body>
-<div class="topnav">
-	<a class="title" href="/laravelAD/public" taret="_self">The Therapy Webbo</a>
-            
-            <a class ="dif"href="articles" taret="_self">Articles</a>
-
-</div>
 <!--
 <div class = "container">
 <p> <a class = "condoc" href="connectWdoc" taret="_self">Connect With A Doctor</a> </p>
@@ -169,7 +163,14 @@ float: left;
 
 <div class="container">
       <div class="doc">
-        <p><a class = "condoc" href="connectWdoc" taret="_self">Connect With a Doctor</a>         </p>
+      @guest
+        @if (Route::has('register'))
+          <p><a class = "condoc" href="{{ route('register') }}" taret="_self">Connect With a Doctor</a></p>                       
+        @endif
+        @else
+          <p><a class = "condoc" href="connectWdoc" taret="_self">Connect With a Doctor</a></p>  
+        @endguest
+        <p>Get advise from our professional doctors today to understand your mental illnesses if you exhibit any concerns!</p>
       </div>
       <div class="que">
         <p>      <a class = "quest" href="Questionnaire" taret="_self">Take a Questionnaire</a></p>
@@ -180,11 +181,6 @@ float: left;
 
     </div>
 
-</div>
-
-<div class="footer">
-<a href="Service&Policy" target="_self">Service & Policy</a>
-<a href="aboutus" target="_self">About Us</a>
 </div>
 
 

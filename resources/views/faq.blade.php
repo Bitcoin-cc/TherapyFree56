@@ -53,7 +53,7 @@
    <!-- HTML -->
    <div class="faq_container">
     <div class="faq">
-       <div class="faq_question">  fourth sprint question</div>
+       <div class="faq_question">What is BitTherapy</div>
             <div class="faq_answer_container">
                <div class="faq_answer">Answer  </div>
             </div>           

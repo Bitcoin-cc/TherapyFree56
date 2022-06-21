@@ -13,7 +13,7 @@
 }
  body {
 	 font-family: 'Roboto', sans-serif;
-	 background: grey;
+	 background: white;
 }
  #dashboard {
 	 margin-left: 20px;
@@ -122,11 +122,6 @@
 
 </head>
 <body>
-    <div class="topnav">
-        <a class="title" href="/laravelAD/public/" taret="_self">The Therapy Webbo</a>
-        <a href="Questionnaire" target="_self">Questionnaire</a>
-        <a href="services" target="_self">Services</a>
-    </div>
 <section id="dashboard">
      <div class="heading">
      <h1>  Dashboard </h1>

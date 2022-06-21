@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
-<h1>Add Patients</h1>
+<h1>Connect with the Doctor</h1>
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
             
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="home" taret="_self">Back </a>
+            
         </div>
     </div>
 </div>
@@ -29,14 +29,14 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" placeholder="name">
+                <strong>Please write your Name:</strong>
+                <input type="text" name="name" class="form-control" placeholder="Your name here">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Description:</strong>
-                <textarea class="form-control" style="height:150px" name="Description" placeholder="Description"></textarea>
+                <textarea class="form-control" style="height:150px" name="Description" placeholder="Describe your issues clearly and comment on anything important that you want the doctor to know"></textarea>
             </div>
         </div>
 
@@ -48,6 +48,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
               
                 <button class="btn btn-primary" href="home"  type="submit" onclick="show_alert()" value="Show alert box"> Submit </button>
+                <a class="btn btn-primary" href="home" taret="_self">Back </a>
         </div>
 
       

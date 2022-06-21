@@ -19,24 +19,62 @@
 
 </head>
 <body>
-<div class="topnav">
-    <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a> <!-- edit this to change where the code lands after loging in -->
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+<h2 class="wide">Welcome to BitTherapy!</h2>
+<section class="home_banner_area">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-6 col-xl-5 offset-xl-7">
+                        <div class="banner_content">
+                            <h3>BitTherapy</h3>
+                            <p>Our website provides high quality therapy service directly to you via our services we can provide</p>
+                            <a class="banner_btn" href="services">Services<i class="ti-arrow-right"></i></a>
+                        </div>
+                    </div>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
                 </div>
-            @endif
             </div>
-</div>
-<h2 class="wide">Therapy Log in to Display Info</h2>
+        </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+<!--================Service  Area =================-->
+<section id="core_features" class="service-area area-padding">
+    <div class="container">
+        <div class="row">
+             <!-- Single service -->
+            <div class="col-md-6 col-lg-4">
+                <div class="single-service">
+                    <div class="service-icon">
+                        <i class="ti-pencil-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h5>Connect with a Doctor!</h5>
+                        <p>Our website includes top level Doctors in the field of Psychology to aid your issues and pleads for any mental issues you are facing!</p>
+                        <a href="services">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Single service -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="single-service">
+                        <div class="service-icon">
+                            <i class="ti-image"></i>
+                        </div>
+                        <div class="service-content">
+                            <h5>Questionnaire</h5>
+                            <p>Take our Questionnaire to find out yourself what may be hindering you in your life!</p>
+                            <a href="Questionnaire">Take it now!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
     </body>
