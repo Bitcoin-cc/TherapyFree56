@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary text-white">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('BitTherapy', 'BitTherapy') }}
@@ -31,8 +31,14 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                   
+                    
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                        <a class="nav-link" href="/patients">Connect With a Patient</a> </li>
+                        <li class="nav-item">
+                             <a class="nav-link" href="/admin/home">Home</a> </li>
 
                     </ul>
 
@@ -58,7 +64,8 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="/patients">Connect With a Patient</a>
+                              
+                        
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -80,5 +87,65 @@
             @yield('content')
         </main>
     </div>
+    <footer class="page-footer teal pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid p-5  bg-primary  text-white">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-6 mt-md-0 mt-3">
+      
+              <!-- Content -->
+              <h5 class="text-uppercase">About</h5>
+                 
+              <h5 class="text-justify">BitTherapy is a website that helps to improve your mental health via our quick online services that can be provided for you to use at your disposal.</h5>
+              <p></p>
+              <p></p>
+              <p></p>
+              <h5 class="text-justify">  Address: 2715 Ash Dr.Sean,83475</h5>
+              <h5 class="text-justify">  Email: sean.graham@gmail.com</h5>
+              <h5 class="text-justify">  Phone:(603)555-0123</h5>
+             
+            
+      
+            </div>
+            <!-- Grid column -->
+      
+            <hr class="clearfix w-100 d-md-none pb-3">
+      
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+      
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+              <a class="nav-link" href="/patients">Connect With A Patient</a> </li>
+         
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3">
+          
+              <!-- Links -->
+              <h5 class="text-uppercase">Links</h5>
+              <a class="nav-link" href="/admin/home">Home</a>
+         
+      
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Links -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 bg-primary text-white">© 2022 Copyright:  BitTherapy.com
+        </div>
+    
+      
+      </footer>
+
 </body>
 </html>

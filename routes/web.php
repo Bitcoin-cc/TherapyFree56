@@ -2,6 +2,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\PatientController;
+use Illuminate\Support\Facades\Input;
+use App\Models\User;
+use App\Models\Patient;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,9 +23,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
+
+
+Route::any( '/search', function () {
+    $q = Request::get ( 'q' );
+    $patient = Patient::where ( 'name', 'LIKE', '%' . $q . '%' )->orWhere ( 'Description', 'LIKE', '%' . $q . '%' )->get ();
+    if (count ( $patient ) > 0)
+        return view ( '/search' )->withDetails ( $patient )->withQuery ( $q );
+    else
+        return view ( '/search' )->withMessage ( 'No Details found. Try to search again !' );
+} );
+
+
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/payment', function () {
+    return view('payment');
+});
+
 
 Route::get('/aboutus', function () {
     return view('aboutus');
@@ -91,6 +117,7 @@ Route::get('/articles/article11', function () {
     return view('articles/article11');
 });
 
+
 Route::get('/articles/article12', function () {
     return view('articles/article12');
 });
@@ -128,8 +155,6 @@ Route::get('/auth/adminRegister', function () {
 
 //Route::resource('pati', [App\Http\Controllers\PatientController]);
 //use App\Http\Controllers\PatientController;
-//Route::resource('/pati', PatientController::class);
-//Route::resource(‘/contact’, ContactController::class);
 
 // Route::get('/userAuth/index', function () {
 //     return view('/userAuth/index');
@@ -145,7 +170,4 @@ Route::get('/auth/adminRegister', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-
 Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');

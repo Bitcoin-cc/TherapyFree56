@@ -1,41 +1,13 @@
 @extends('layouts.app')
-
 @section('content')
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" href="mystyle.css">
+
 </head>
 <style>
 
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.topnav a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-.topnav a.title {
-	font-size: 30px;
-}
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-}
 
 * {
   box-sizing: border-box;
@@ -60,7 +32,7 @@ p {
 }
 
 
-.container {
+.ocontainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 25px;
@@ -68,7 +40,7 @@ p {
 
 
 
-.container > div {
+.ocontainer > div {
     cursor: pointer;
   height: 560px;
   background-size: cover;
@@ -81,7 +53,7 @@ p {
 
 }
 
-.container > div:hover {
+.ocontainer > div:hover {
     transform: scale(0.99);
     opacity: 0.7;
     
@@ -89,10 +61,10 @@ p {
 }
 
 
-a:link {
-  color: yellow;
+/* a:link {
+  color: black;
   text-decoration: none;
-}
+} */
 
 .condoc:visited {
   color: black;
@@ -125,55 +97,21 @@ a:active {
   
 }
 
-.footer {
-  background-color: #333;
-  overflow: hidden;
-}
-.footer a {
-float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-.footer a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.footer a.active {
-  background-color: #04AA6D;
-  color: white;
-}
-.footer {
-  background-color: #333;
-  overflow: hidden;
-}
+
+
 
 
 </style>
-<body>
-<!--
-<div class = "container">
-<p> <a class = "condoc" href="connectWdoc" taret="_self">Connect With A Doctor</a> </p>
-<p> <a class = "quest" href="Questionnaire" taret="_self">Take A Questionnaire To Display Mental Status</a></p>
-</div>
- 
--->
 
-<div class="container">
+<body>
+  
+
+<div class="ocontainer">
       <div class="doc">
-      @guest
-        @if (Route::has('register'))
-          <p><a class = "condoc" href="{{ route('register') }}" taret="_self">Connect With a Doctor</a></p>                       
-        @endif
-        @else
-          <p><a class = "condoc" href="connectWdoc" taret="_self">Connect With a Doctor</a></p>  
-        @endguest
-        <p>Get advise from our professional doctors today to understand your mental illnesses if you exhibit any concerns!</p>
+        <p><a style ="color=black;" class = "condoc" href="connectWdoc" taret="_self">Connect With a Doctor</a>         </p>
       </div>
       <div class="que">
-        <p>      <a class = "quest" href="Questionnaire" taret="_self">Take a Questionnaire</a></p>
+        <p>      <a style ="color=black;" class = "quest" href="Questionnaire" taret="_self">Take a Questionnaire</a></p>
       </div>
       
 
@@ -186,19 +124,7 @@ float: left;
 
 
 </html>
-
+@endsection
 
 </body>
 </html>
-
-<!--
-put the same website theme
-put a footer
-design two button that would redierct the user to the services (questioannire and connect with a doctor)
-
-
-
-
--->
-@endsection
-

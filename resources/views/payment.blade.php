@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,9 +35,9 @@
            Pay with Netbanking
         </button>
   
-        <!-- <button type="button" class="pay-now-btn">
+         <button type="button" class="pay-now-btn">
         Netbanking options
-        </button> -->
+        </button> 
       </div>
   
       <div class="card-details">
@@ -73,3 +77,4 @@
     </div>
   </body>
 </html>
+@endsection

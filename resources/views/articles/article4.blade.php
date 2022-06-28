@@ -1,5 +1,8 @@
-@extends('layouts.adapp')
+@extends('layouts.app');
 @section('content')
+@endsection
+
+
 <!DOCTYPE HTML>
 <html lang=en>
 <head>

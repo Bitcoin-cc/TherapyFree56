@@ -35,7 +35,7 @@ p {
 }
 
 
-.container {
+.cocontainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
@@ -43,7 +43,7 @@ p {
 
 
 
-.container > div {
+.cocontainer > div {
     cursor: pointer;
   height: 210px;
   background-size: cover;
@@ -56,7 +56,7 @@ p {
 
 }
 
-.container > div:hover {
+.cocontainer > div:hover {
     transform: scale(0.88);
     opacity: 0.7;
     
@@ -163,8 +163,8 @@ a:active {
 
 </style>
 <body>
+  <div class="cocontainer ">
 
-  <div class="container">
       <div class="bg1">
       <p>      <a class = "aw" href="articles/article1" taret="_self">Anxiety</a></p>
       </div>
@@ -204,7 +204,7 @@ a:active {
 
       </div>
     </div>
-    </div>
+    
      
 
 </body>

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.oapp')
 
 @section('content')
 
@@ -29,7 +29,7 @@
                         <div class="banner_content">
                             <h3>BitTherapy</h3>
                             <p>Our website provides high quality therapy service directly to you via our services we can provide</p>
-                            <a class="banner_btn" href="services">Services<i class="ti-arrow-right"></i></a>
+                            <a class="banner_btn" href="register">Services<i class="ti-arrow-right"></i></a>
                         </div>
                     </div>
 
@@ -52,7 +52,7 @@
                     <div class="service-content">
                         <h5>Connect with a Doctor!</h5>
                         <p>Our website includes top level Doctors in the field of Psychology to aid your issues and pleads for any mental issues you are facing!</p>
-                        <a href="services">Read More</a>
+                        <a href="register">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         <div class="service-content">
                             <h5>Questionnaire</h5>
                             <p>Take our Questionnaire to find out yourself what may be hindering you in your life!</p>
-                            <a href="Questionnaire">Take it now!</a>
+                            <a href="register">Take it now!</a>
                         </div>
                     </div>
                 </div>

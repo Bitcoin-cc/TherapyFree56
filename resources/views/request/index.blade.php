@@ -1,9 +1,15 @@
 @extends('layouts.app')
 @section('content')
 
+
+
+
+
 <h1>Patients</h1>
 <h5>Having a Mental Illness? Connect With a
-<a href ="/connectWdoc">Doctor</a> </h5>
+<a href ="/connectWdoc">Doctor</a> </h5>  
+
+
 
 @if(count($patients)>1)
 
