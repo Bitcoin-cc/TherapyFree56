@@ -284,7 +284,12 @@
                             <li><i class='bx bxs-check-circle'></i>
                                  </li>
                         </ul>
-                        <button class="btn btn-primary">Make Payment</button>
+
+
+                        <a  href="payment1"class="btn btn-primary">Make Payment</a>
+
+
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -302,7 +307,8 @@
                             <li><i class='bx bxs-check-circle'></i>
                                  </li>
                         </ul>
-                        <button class="btn btn-primary">Make Payment</button>
+                        <a  href="payment2"class="btn btn-primary">Make Payment</a>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -320,7 +326,8 @@
                             <li><i class='bx bxs-check-circle'></i>
                                  </li>
                         </ul>
-                        <button class="btn btn-primary">Make Payment</button>
+                        <a  href="payment3"class="btn btn-primary">Make Payment</a>
+
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
@@ -339,7 +346,8 @@
                                  </li>
                            
                         </ul>
-                        <button class="btn btn-primary">Make Payment</button>
+                        <a  href="payment4"class="btn btn-primary">Make Payment</a>
+
                     </div>
                 </div>
             </div>

@@ -142,7 +142,24 @@ Route::get('request','PatientUController@index');
 Route::get('request','PatientUController@index');
  
 
+Route::get('/payment1', function () {
+    return view('/payment1');
+});
+Route::get('/payment2', function () {
+    return view('/payment2');
+});
+Route::get('/payment3', function () {
+    return view('/payment3');
+});
+Route::get('/payment4', function () {
+    return view('/payment4');
+});
 
+Route::post('pay', [App\Http\Controllers\PaymentController::class, 'pay'])->name('payment');
+
+
+Route::get('success', [App\Http\Controllers\PaymentController::class, 'success']);
+Route::get('error', [App\Http\Controllers\PaymentController::class, 'error']);
 
 
 Route::get('/faq', function () {
