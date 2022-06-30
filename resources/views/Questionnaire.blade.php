@@ -74,16 +74,13 @@
 <body>
     <h2>Mental Health Questionnaire</h2>
   
-    <!-- Create Form -->
     <form id="form">
  
-        <!-- Details -->
         <div class="form-control">
             <label for="name" id="label-name">
                 Name
             </label>
  
-            <!-- Input Type Text -->
             <input type="text"
                    id="name"
                    placeholder="Enter your name" />
@@ -94,7 +91,6 @@
                 Email
             </label>
  
-            <!-- Input Type Email-->
             <input type="email"
                    id="email"
                    placeholder="Enter your email" />
@@ -105,7 +101,6 @@
                 Age
             </label>
  
-            <!-- Input Type Text -->
             <input type="text"
                    id="age"
                    placeholder="Enter your age" />
@@ -116,7 +111,6 @@
             Do you feel pleasant?
             </label>
              
-            <!-- Dropdown options -->
             <select name="q-1" id="q-1">
                 <option value="yes1">Yes</option>
                 <option value="no1">No</option>
@@ -129,7 +123,6 @@
             Do you feel nervous and restless?
             </label>
              
-            <!-- Dropdown options -->
             <select name="q-2" id="q-2">
                 <option value="yes2">Yes</option>
                 <option value="no2">No</option>
@@ -142,7 +135,6 @@
             Do you feel satisfied with yourself?
             </label>
              
-            <!-- Dropdown options -->
             <select name="q-3" id="q-3">
                 <option value="yes3">Yes</option>
                 <option value="no3">No</option>
@@ -155,7 +147,6 @@
             Do you wish you could be as happy as others seem to be?
             </label>
              
-            <!-- Dropdown options -->
             <select name="q-4" id="q-4">
                 <option value="yes4">Yes</option>
                 <option value="no4">No</option>
@@ -168,7 +159,6 @@
             Do you feel like a failure?
             </label>
              
-            <!-- Dropdown options -->
             <select name="q-5" id="q-5">
                 <option value="yes5">Yes</option>
                 <option value="no5">No</option>
@@ -182,7 +172,6 @@
             <small>(select number to reflect your answer highest being 5)</small>
             </label>
              
-            <!-- Dropdown options -->
             <select name="q-6" id="q-6">
                 <option value="number0">0</option>
                 <option value="number1">1</option>
@@ -199,7 +188,6 @@
             <small>(select number to reflect your answer highest being 5)</small>
             </label>
              
-            <!-- Dropdown options -->
             <select name="q7" id="q7">
                 <option value="optn0">0</option>
                 <option value="optn1">1</option>
@@ -214,7 +202,6 @@
             <label>Any prior diagnosed condition
                 <small>(Check all that apply)</small>
             </label>
-            <!-- Input Type Checkbox -->
             <label for="inp-1">
                 <input type="checkbox"
                        name="inp">Anxiety</input></label>
@@ -249,7 +236,6 @@
                 Any comments or suggestions
             </label>
  
-            <!-- multi-line text input control -->
             <textarea name="comment" id="comment"
                 placeholder="Enter your comment here">
             </textarea>
@@ -261,7 +247,6 @@
             }
         </script>
   
-        <!-- Multi-line Text Input Control -->
         <button href="articles"  type="submit" onclick="show_alert()" value="Show alert box"> Submit </button>
     </form>
 </body>
