@@ -34,6 +34,9 @@
             margin-bottom: 25px;
            }
            
-           
+           .form-control label {
+            display: block;
+            margin-bottom: 10px;
+           }
 
 @endsection
