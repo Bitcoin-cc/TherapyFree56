@@ -15,5 +15,11 @@
     </title>
  
     <style>
+    
+    body {
+            background-color: #05c46b;
+            font-family: Verdana;
+            text-align: center;
+        }
 
 @endsection
