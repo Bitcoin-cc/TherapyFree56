@@ -50,8 +50,7 @@
             width: 95%;
            }
  
-        /* Styling form-control Radio
-        button and Checkbox */
+
            .form-control input[type="radio"],
            .form-control input[type="checkbox"] {
             display: inline-block;
