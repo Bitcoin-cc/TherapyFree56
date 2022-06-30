@@ -28,5 +28,12 @@
             padding: 30px 20px;
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
            }
+           
+           .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+           }
+           
+           
 
 @endsection
