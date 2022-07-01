@@ -1,3 +1,7 @@
+@extends('layouts.app')
+@section('content')
+
+
 
 <!DOCTYPE HTML>
 <html lang=en>
@@ -7,13 +11,7 @@
 <link rel="stylesheet" href="mystyle.css">
 </head>  
 <body>
-<div class="topnav">
-	<a class="title" href="/laravelAD/public" taret="_self">The Therapy Webbo</a>
-            
-            <a class ="dif"href="articles" taret="_self">Articles</a>
-            <a class ="dif"href="services" taret="_self">Services</a>
 
-</div>
    <header>
     <h1>How To Build Self Esteem: Tips And Techniques To Increase Self-Confidence</h1>
     </header>
@@ -69,3 +67,4 @@
 </body>
 
 </html>
+@endsection

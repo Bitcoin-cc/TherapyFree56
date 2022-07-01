@@ -35,7 +35,7 @@ p {
 }
 
 
-.container {
+.cocontainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
@@ -43,7 +43,7 @@ p {
 
 
 
-.container > div {
+.cocontainer > div {
     cursor: pointer;
   height: 210px;
   background-size: cover;
@@ -56,7 +56,7 @@ p {
 
 }
 
-.container > div:hover {
+.cocontainer > div:hover {
     transform: scale(0.88);
     opacity: 0.7;
     
@@ -98,73 +98,73 @@ a:active {
 }
 
 .bg1 {
-  background: url('/laravelad/resources/views/images/signs-of-anxiety-disorder-2.jpg');
+  background: url('/images/signs-of-anxiety-disorder-2.jpg');
 }
 
 .bg2 {
-    background: url('/laravelad/resources/views/images/frustrated_man.jpg');
+    background: url('/images/frustrated_man.jpg');
   
 }
 
 .bg3 {
-  background: url('/laravelad/resources/views/images/Borderline-Personality.jpg');
+  background: url('/images/Borderline-Personality.jpg');
   color: black;
 
 }
 
 .bg4 {
-  background: url('/laravelad/resources/views/images/depression.jpg');
+  background: url('/images/depression.jpg');
 }
 
 .bg5 {
-  background: url('/laravelad/resources/views/images/fat.jpg');
+  background: url('/images/fat.jpg');
   color: #333;
 
 }
 
 .bg6 {
-  background: url('/laravelad/resources/views/images/grieff.webp');
+  background: url('/images/grieff.webp');
 }
 
 
 .bg7 {
-  background: url('/laravelad/resources/views/images/stress.jpg');
+  background: url('/images/stress.jpg');
   color: black;
 
 }
 
 .bg8 {
-  background: url('/laravelad/resources/views/images/selfteem.jpg');
+  background: url('/images/selfteem.jpg');
   color: black;
 
 }
 
 .bg9 {
-  background: url('/laravelad/resources/views/images/relation.jpg');
+  background: url('/images/relation.jpg');
   color: #333;
 
 }
 
 .bg10 {
-  background: url('/laravelad/resources/views/images/mentalhe.jpg');
+  background: url('/images/mentalhe.jpg');
 
 }
 
 .bg11 {
-  background: url('/laravelad/resources/views/images/autsi.jpg');
+  background: url('/images/autsi.jpg');
   color: #333;
 
 }
 
 
 .bg12 {
-  background: url('/laravelad/resources/views/images/insomnia.jpg');
+  background: url('/images/insomnia.jpg');
 }
 
 </style>
 <body>
+  <div class="cocontainer ">
 
-  <div class="container">
       <div class="bg1">
       <p>      <a class = "aw" href="articles/article1" taret="_self">Anxiety</a></p>
       </div>
@@ -204,7 +204,7 @@ a:active {
 
       </div>
     </div>
-    </div>
+    
      
 
 </body>

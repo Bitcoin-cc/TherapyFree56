@@ -1,23 +1,14 @@
+@extends('layouts.app')
+@section('content')
 <!DOCTYPE HTML>
 <html lang=en>
 <head>
 <meta charset="utf-8" />
-<title>TherapyFree56 - articles </title>
 
-<link href="/css/mystyle.css" rel="stylesheet" >
 </head>  
 <body>
 
 
-
-
-<div class="topnav">
-	<a class="title" href="/laravelAD/public" taret="_self">The Therapy Webbo</a>
-            
-            <a class ="dif"href="articles" taret="_self">Articles</a>
-            <a class ="dif"href="services" taret="_self">Services</a>
-
-</div>
 
     <h1>Dizziness , trembling, pounding heartbeat - What these body sensations are telling you.</h1>
 
@@ -51,14 +42,7 @@
 <p/>Done with this article, and moving on to the next activity? Take a deep breath :) 
 </article>
 
-
-<div class="footer">
-	<a href="/laravelAD/public" taret="_self">The Therapy Webbo</a>
-            
-          Articles
-
-</div>
-
 </body>
 
 </html>
+@endsection

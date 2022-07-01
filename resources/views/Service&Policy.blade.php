@@ -7,14 +7,14 @@
 <html lang=en>
 <head>
 <meta charset="utf-8" />
-<title>TherapyFree56 - Privacy Policy</title>
+<title> BitTherapy - Privacy Policy</title>
 <link rel="stylesheet" href="mystyle.css">
 </head>  
 <body>
 <div class="topnav">
 </div>
    <header>
-    <h1>TherapyFree56 Privacy Policy</h1>
+    <h1>BitTherapy Privacy Policy</h1>
     </header>
 
 <nav>

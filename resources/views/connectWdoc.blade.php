@@ -1,6 +1,8 @@
 @extends('layouts.app')
 @section('content')
-<h1>Add Patients</h1>
+
+<h1 style="text-align:center;">Connect With a Doctor </h1>
+
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
@@ -29,20 +31,20 @@
      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Name:</strong>
-                <input type="text" name="name" class="form-control" placeholder="name">
+                <h5 style="text-align:center;">Write Your Name:</h5>
+                <input type="text" name="name" class="form-control" placeholder="Name">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Description:</strong>
+                <h5 style="text-align:center;">Describe Your Illness</h5>
                 <textarea class="form-control" style="height:150px" name="Description" placeholder="Description"></textarea>
             </div>
         </div>
 
     <script type="text/javascript">
         function show_alert() {
-            alert("Issue Sent To the Doctor Check Your Home Page For more Info");
+            alert("Issue Sent To the Doctor Check Your Homepage For more Info !");
         }
     </script>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

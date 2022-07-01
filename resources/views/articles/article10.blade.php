@@ -1,3 +1,8 @@
+@extends('layouts.app')
+@section('content')
+
+
+
 <!DOCTYPE HTML>
 <html lang=en>
 <head>
@@ -6,13 +11,7 @@
 <link rel="stylesheet" href="mystyle.css">
 </head>  
 <body>
-<div class="topnav">
-	<a class="title" href="/laravelAD/public" taret="_self">The Therapy Webbo</a>
-            
-            <a class ="dif"href="articles" taret="_self">Articles</a>
-            <a class ="dif"href="services" taret="_self">Services</a>
 
-</div>
    <header>
     <h1>Speaking To An Online Psychologist: Key To Better Mental Health</h1>
     </header>
@@ -66,3 +65,4 @@
 </body>
 
 </html>
+@endsection
