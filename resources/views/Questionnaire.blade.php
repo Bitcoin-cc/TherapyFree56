@@ -15,11 +15,7 @@
     </title>
  
     <style>
-           body {
-            background-color: #05c46b;
-            font-family: Verdana;
-            text-align: center;
-           }
+          
         
            form {
             background-color: #fff;
@@ -72,7 +68,7 @@
 </head>
 
 <body>
-    <h2>Mental Health Questionnaire</h2>
+    <h2 style="text-align: center;">Mental Health Questionnaire</h2>
   
     <form id="form">
  
@@ -247,7 +243,7 @@
             }
         </script>
   
-        <button href="articles"  type="submit" onclick="show_alert()" value="Show alert box"> Submit </button>
+        <button class="btn btn-primary"href="articles"  type="submit" onclick="show_alert()" value="Show alert box"> Submit </button>
     </form>
 </body>
   

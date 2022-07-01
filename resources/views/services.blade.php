@@ -89,11 +89,11 @@ a:active {
 
 
 .doc {
-  background: url('/laravelad/resources/views/images/docpic.jpg');
+  background: url('/images/docpic.jpg');
 }
 
 .que {
-    background: url('/laravelad/resources/views/images/questio.jpg');
+    background: url('/images/questio.jpg');
   
 }
 

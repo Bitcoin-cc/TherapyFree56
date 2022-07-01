@@ -664,41 +664,41 @@
                           <div class="cocontainer ">
                         
                               <div class="bg1">
-                              <p>      <a class = "aw" href="articles/article1" taret="_self">Anxiety</a></p>
+                              <p>      <a class = "aw" href="/articles/article1" taret="_self">Anxiety</a></p>
                               </div>
                         
                               <div class="bg2">
-                              <p>      <a class = "aw" href="articles/article2" taret="_self">Anger</a></p>
+                              <p>      <a class = "aw" href="/articles/article2" taret="_self">Anger</a></p>
                               </div>
                               <div class="bg3">
-                              <p>      <a class = "ab" href="articles/article3" taret="_self">Borderline Personality Disorder</a></p>
+                              <p>      <a class = "ab" href="/articles/article3" taret="_self">Borderline Personality Disorder</a></p>
                               </div>
                               <div class="bg4">
-                              <p>      <a class = "aw" href="articles/article4" taret="_self">Depression</a></p>
+                              <p>      <a class = "aw" href="/articles/article4" taret="_self">Depression</a></p>
                               </div>
                               <div class="bg5">
-                              <p>      <a class = "ag" href="articles/article5" taret="_self">Eating Disorder</a></p>
+                              <p>      <a class = "ag" href="/articles/article5" taret="_self">Eating Disorder</a></p>
                               </div>
                               <div class="bg6">
-                              <p>      <a class = "aw" href="articles/article6" taret="_self">Grief</a></p>
+                              <p>      <a class = "aw" href="/articles/article6" taret="_self">Grief</a></p>
                               </div>
                               <div class="bg7">
-                              <p>      <a class = "ab" href="articles/article7" taret="_self">Stress</a></p>
+                              <p>      <a class = "ab" href="/articles/article7" taret="_self">Stress</a></p>
                               </div>
                               <div class="bg8">
-                              <p>      <a class = "ab" href="articles/article8" taret="_self">Self-Esteem</a></p>
+                              <p>      <a class = "ab" href="/articles/article8" taret="_self">Self-Esteem</a></p>
                               </div>
                               <div class="bg9">
-                              <p>      <a class = "ag" href="articles/article9" taret="_self">Relationship</a></p>
+                              <p>      <a class = "ag" href="/articles/article9" taret="_self">Relationship</a></p>
                               </div>
                               <div class="bg10">
-                              <p>      <a class = "aw" href="articles/article10" taret="_self">Mental Health</a></p>
+                              <p>      <a class = "aw" href="/articles/article10" taret="_self">Mental Health</a></p>
                               </div>
                               <div class="bg11">
                               <p>      <a class = "ag" href="articles/article11" taret="_self">Autism </a></p>
                               </div>
                               <div class="bg12">
-                              <p>      <a class = "aw" href="articles/article12" taret="_self">Schizophernia</a></p>
+                              <p>      <a class = "aw" href="/articles/article12" taret="_self">Schizophernia</a></p>
                         
                               </div>
                             </div>
