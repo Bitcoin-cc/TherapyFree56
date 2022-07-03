@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('BitTherapy', 'BitTherapy') }}</title>
-
+    <link rel="shortcut icon" type="image/jpg" href="images/pp.jpg">
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 

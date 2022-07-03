@@ -5,7 +5,7 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Create an FAQ Page with Show and Hide Questions and Answers using jQuery</title>
+  <title>FAQ Page</title>
   
   <!-- jQuery -->
   <script type="text/javascript" src="//code.jquery.com/jquery-3.6.0.min.js"></script>
